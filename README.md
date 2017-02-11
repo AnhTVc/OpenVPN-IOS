@@ -13,7 +13,13 @@ $ bash build-libpcap.sh
 $ bash build-libssl.sh
 
 $ bash build-openvpn.sh
+# clone source hans and openvpn to Submodules. 
 
+Link source
+
+https://github.com/chrisballinger/hans/tree/893ac91eaf080b43170b839b22f9086f0dbc648d
+
+https://github.com/chrisballinger/openvpn/tree/0f77573024e69c34ec8a5cbc0744e126ad73de27
 # Open project
 Open OpenVPN project with Xcode
 # Note
