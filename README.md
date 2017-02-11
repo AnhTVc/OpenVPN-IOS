@@ -33,3 +33,9 @@ Fix:
 Apple refuses to allow people to use the VPN framework unless they sign some sort of NDA: http://blog.michael.kuron-germany.de/2010/09/ios-4-1-undocumented-vpn-api-used-by-cisco-anyconnect/
 
 OpenVPN Connect sign NDA with apple because it not public.
+
+Document for NDA OpenVPN with apple
+
+https://books.google.com.vn/books?id=O-13CgAAQBAJ past: OpenVPN/OpenVPN Conenct
+
+https://forums.openvpn.net/viewtopic.php?t=21218 
