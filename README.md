@@ -2,6 +2,15 @@
 Build OpenVPN source for IOS to Wrapper Objective, run in IOS
 Create by AnhTVc
 # Step by step
+# Clone
+$ git clone https://github.com/AnhTVc/OpenVPN-IOS.git
+
+$ cd OpenVPN-IOS/Submodules
+
+$ git clone https://github.com/chrisballinger/hans/tree/893ac91eaf080b43170b839b22f9086f0dbc648d
+
+$ git clone https://github.com/chrisballinger/openvpn/tree/0f77573024e69c34ec8a5cbc0744e126ad73de27
+
 # Install libtool and automake:
 
 $ brew install libtool automake
