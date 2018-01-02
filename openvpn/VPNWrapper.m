@@ -37,12 +37,18 @@ extern char* openvpn_main(int argc, char *argv[], char* foder_document);
  * Core OpenVPN write IP Client to Document folder. File name is: ip.txt
  * Delete if file exit when start OpenVPN
  */
-- (char *) startWithOptions:(NSArray *)options {
+- (void) startWithOptions:(NSArray *)options {
     // Delete file ip.txt
     NSArray *paths = NSSearchPathForDirectoriesInDomains
     (NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
     
+   // [self deleteFileInFolder:documentsDirectory namefilee:@"ip.txt"];
+    
+    if (self.isStarted) {
+        return;
+    }
+    self.isStarted = YES;
     NSMutableArray *arguments = [NSMutableArray arrayWithCapacity:1+[options count]];
     [arguments addObject:@"openvpn"];
     [arguments addObjectsFromArray:options];
@@ -60,7 +66,7 @@ extern char* openvpn_main(int argc, char *argv[], char* foder_document);
     argv[argc] = NULL;
     const char* path = [documentsDirectory UTF8String];
     
-    return openvpn_main(argc, argv, path);
+    char* returnValue = openvpn_main(argc, argv, path);
     free(argv);
 }
 

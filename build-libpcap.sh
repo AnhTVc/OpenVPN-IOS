@@ -23,7 +23,7 @@
 #  Choose your libpcap version and your currently-installed iOS SDK version:
 #
 VERSION="1.4.0"
-SDKVERSION="10.2"
+SDKVERSION="10.3"
 MINIOSVERSION="6.0"
 
 ###########################################################################

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "520A79B2FEF1C0D11E196D73BE07B405DC1F0801",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "520A79B2FEF1C0D11E196D73BE07B405DC1F0801" : 9223372036854775807,
+    "7E43F853D729A9379DE22B64040705EC0E1E3C9A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "53BFB026-7CE0-4C94-A3A2-0616F4DE6F8D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "520A79B2FEF1C0D11E196D73BE07B405DC1F0801" : "openvpn-server\/",
+    "7E43F853D729A9379DE22B64040705EC0E1E3C9A" : "..\/..\/..\/work\/openvpn\/Git\/ShadowVPN-iOS"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "openvpn",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "openvpn.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/chrisballinger\/openvpn-server-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "520A79B2FEF1C0D11E196D73BE07B405DC1F0801"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yuyao110120\/ShadowVPN-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7E43F853D729A9379DE22B64040705EC0E1E3C9A"
+    }
+  ]
+}

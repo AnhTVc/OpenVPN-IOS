@@ -119,8 +119,8 @@ extern "C" {
 
 #if !(defined(VMS) || defined(__VMS)) /* VMS uses logical names instead */
 #if defined(HEADER_CRYPTLIB_H) && !defined(OPENSSLDIR)
-#define ENGINESDIR "/Users/nguyenmanhtuan/Documents/AnhTVc/openvpn-build/new3/openvpn-server-ios/build/built/iPhoneSimulator10.2-i386.sdk/lib/engines"
-#define OPENSSLDIR "/Users/nguyenmanhtuan/Documents/AnhTVc/openvpn-build/new3/openvpn-server-ios/build/built/iPhoneSimulator10.2-i386.sdk"
+#define ENGINESDIR "/Users/nguyenmanhtuan/Documents/AnhTVc/openvpn/openvpn-build/new3/openvpn-server/build/built/iPhoneSimulator10.3-i386.sdk/lib/engines"
+#define OPENSSLDIR "/Users/nguyenmanhtuan/Documents/AnhTVc/openvpn/openvpn-build/new3/openvpn-server/build/built/iPhoneSimulator10.3-i386.sdk"
 #endif
 #endif
 

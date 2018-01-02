@@ -22,8 +22,8 @@
 ###########################################################################
 #  Choose your openvpn version and your currently-installed iOS SDK version:
 #
-VERSION="2.3.2"
-SDKVERSION="10.2"
+VERSION="2.4.1"
+SDKVERSION="10.3"
 MINIOSVERSION="6.0"
 
 #
@@ -37,7 +37,7 @@ MINIOSVERSION="6.0"
 # No need to change this since xcode build will only compile in the
 # necessary bits from the libraries we create
 #ARCHS="i386 x86_64 armv7 armv7s arm64"
-ARCHS="armv7"
+ARCHS="armv7 arm64"
 
 DEVELOPER=`xcode-select -print-path`
 
@@ -106,7 +106,7 @@ do
 
 	mkdir -p "${INTERDIR}/${PLATFORM}${SDKVERSION}-${ARCH}.sdk"
 
-	./configure --enable-tunemu --disable-snappy --disable-shared --enable-static --with-pic --disable-lzo --disable-plugin-auth-pam --disable-plugin-down-root ${EXTRA_CONFIG} \
+	./configure --enable-password-save --enable-tunemu --disable-snappy --disable-shared --enable-static --with-pic --disable-lzo --disable-plugin-auth-pam --disable-plugin-down-root ${EXTRA_CONFIG} \
     --prefix="${INTERDIR}/${PLATFORM}${SDKVERSION}-${ARCH}.sdk" \
     CC="${CCACHE}${DEVELOPER}/usr/bin/gcc" \
     LDFLAGS="$LDFLAGS -arch ${ARCH} -fPIE -miphoneos-version-min=${MINIOSVERSION} ${EXTRA_LDFLAGS} -L${OUTPUTDIR}/lib" \

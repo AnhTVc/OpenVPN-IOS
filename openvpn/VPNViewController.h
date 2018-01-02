@@ -10,4 +10,8 @@
 
 @interface VPNViewController : UIViewController
 
+- (IBAction)btn:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UIButton *btnConnectText;
+@property (nonatomic) dispatch_queue_t queue;
+@property (nonatomic) dispatch_queue_t coreVPN;
 @end
