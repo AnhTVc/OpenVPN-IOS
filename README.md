@@ -33,5 +33,7 @@ To clean the `Submodules/openvpn` build folder:
 
 Simplest OpenVPN setup: [Static Key Mini-HOWTO](http://openvpn.net/index.php/open-source/documentation/miscellaneous/78-static-key-mini-howto.html)
 
-
+Connect me
+skype: tranvietanh.hust@gmail.com
+email: tranvietanh.hust@gmail.com
 
