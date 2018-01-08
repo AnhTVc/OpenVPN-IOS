@@ -21,9 +21,8 @@ Build the dependencies:
 
     $ bash build-libssl.sh
     $ bash build-openvpn.sh
-clone source hans and openvpn to Submodules.
 
-Link source
+clone source hans and openvpn to Submodules.Link source
 
 https://github.com/chrisballinger/hans/tree/893ac91eaf080b43170b839b22f9086f0dbc648d
 
