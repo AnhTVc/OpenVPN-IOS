@@ -29,33 +29,16 @@
     self.coreVPN = dispatch_queue_create("check coreVPN", 0);
     // Do any additional setup after loading the view.
     
-    [_btnConnectText setTitle:@"Loading..." forState:UIControlStateNormal];
-    dispatch_async(self.coreVPN, ^{
-        NSString *filepath = [[NSBundle mainBundle] pathForResource:@"udp" ofType:@"ovpn"];
-        NSString *filepass = [[NSBundle mainBundle] pathForResource:@"pass" ofType:@"txt"];
-        NSString *filecert = [[NSBundle mainBundle] pathForResource:@"cert" ofType:@"file"];
-        NSString *fileca = [[NSBundle mainBundle] pathForResource:@"ca" ofType:@"file"];
-        //[[VPNWrapper sharedInstance] startWithOptions:@[@"--help"]];
-        //[P startTunnel];
-        
-        @try {
-            [[VPNWrapper sharedInstance] startWithOptions:@[@"--config", filepath, @"--auth-user-pass", filepass
-                                                            , @"--cert", filecert
-                                                            , @"--ca", fileca]];
-        } @catch (NSException *exception) {
-            NSLog(@"%@", exception);
-        } @finally {
-        }
-    });
+    NSString *filepath = [[NSBundle mainBundle] pathForResource:@"tcp" ofType:@"ovpn"];
+    NSString *filepass = [[NSBundle mainBundle] pathForResource:@"pass" ofType:@"txt"];
+    NSString *filecert = [[NSBundle mainBundle] pathForResource:@"cert" ofType:@"file"];
+    NSString *fileca = [[NSBundle mainBundle] pathForResource:@"ca" ofType:@"file"];
+    //[[VPNWrapper sharedInstance] startWithOptions:@[@"--help"]];
+    //[P startTunnel];
     
-    dispatch_async(self.queue, ^{
-        while (true) {
-            if([util checkFileIpClient:[util readFileInDocument:@"ip.txt"]]){
-                break;
-            }
-        }
-        
-    });
+    [[VPNWrapper sharedInstance] startWithOptions:@[@"--config", filepath, @"--auth-user-pass", filepass
+                                                    , @"--cert", filecert
+                                                    , @"--ca", fileca]];
 }
 
 - (void)didReceiveMemoryWarning
