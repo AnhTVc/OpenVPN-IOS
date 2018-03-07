@@ -17,6 +17,7 @@
 		614850131ED000FC0055EF74 /* libpcap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EA53321827664C00CB83C9 /* libpcap.a */; };
 		614850141ED000FC0055EF74 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F187D118270DD600FE27F1 /* libssl.a */; };
 		614A3D291EEEECA20095D177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614A3D281EEEECA20095D177 /* LaunchScreen.storyboard */; };
+		6159E10C1EEE727600F3DD6E /* udp.ovpn in Resources */ = {isa = PBXBuildFile; fileRef = 6159E10B1EEE727600F3DD6E /* udp.ovpn */; };
 		6159E1221EEE73AC00F3DD6E /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6159E1201EEE73A200F3DD6E /* NetworkExtension.framework */; };
 		615B2BCF1EEEE94F00B77194 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 615B2BCE1EEEE94F00B77194 /* Storyboard.storyboard */; };
 		616503031EEF89110077E101 /* TunnelUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 616503021EEF89110077E101 /* TunnelUtil.m */; };
@@ -56,6 +57,7 @@
 		61427E091EBE02F50032AB64 /* cert.file */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cert.file; sourceTree = "<group>"; };
 		614850101ECFF8340055EF74 /* openvpn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = openvpn.entitlements; sourceTree = "<group>"; };
 		614A3D281EEEECA20095D177 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6159E10B1EEE727600F3DD6E /* udp.ovpn */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = udp.ovpn; sourceTree = "<group>"; };
 		6159E1201EEE73A200F3DD6E /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		615B2BCE1EEEE94F00B77194 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		616503011EEF89110077E101 /* TunnelUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TunnelUtil.h; sourceTree = "<group>"; };
@@ -909,6 +911,7 @@
 		D9F187561826F67800FE27F1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6159E10B1EEE727600F3DD6E /* udp.ovpn */,
 				61427E091EBE02F50032AB64 /* cert.file */,
 				61427E071EBE01A20032AB64 /* ca.file */,
 				61427E051EBDF73B0032AB64 /* pass.txt */,
@@ -1091,9 +1094,6 @@
 						DevelopmentTeam = 68A88F65UK;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
@@ -1140,6 +1140,7 @@
 				61427E0A1EBE02F50032AB64 /* cert.file in Resources */,
 				D9F188AA1827287900FE27F1 /* server.conf in Resources */,
 				D9F188AB1827287900FE27F1 /* static.key in Resources */,
+				6159E10C1EEE727600F3DD6E /* udp.ovpn in Resources */,
 				614A3D291EEEECA20095D177 /* LaunchScreen.storyboard in Resources */,
 				615B2BCF1EEEE94F00B77194 /* Storyboard.storyboard in Resources */,
 			);
@@ -1236,7 +1237,6 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1262,7 +1262,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "openvpn/openvpn-Prefix.pch";
 				INFOPLIST_FILE = "openvpn/openvpn-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					$PROJECT_DIR/dependencies/lib,
@@ -1289,7 +1289,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "openvpn/openvpn-Prefix.pch";
 				INFOPLIST_FILE = "openvpn/openvpn-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					$PROJECT_DIR/dependencies/lib,

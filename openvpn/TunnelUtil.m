@@ -85,36 +85,9 @@
         //get server address
         NSString *serverAddress = [lines[0] componentsSeparatedByString:@"-"][0];
         NSLog(@"server address: %@", serverAddress);
-        NSString *ipTemp = [lines[lines.count - 2] componentsSeparatedByString:@"-"][1];
-        
-        NSArray *array = [ipTemp componentsSeparatedByString:@"."];
-        NSString *tempIP = array[3];
-        
-        NSNumber *one = [NSNumber numberWithInt:1];
-        //NSNumber *two =[NSNumber numberWithInt:2];
-        NSNumber *xxx = [NSNumber numberWithInt:[tempIP intValue]];
-        NSNumber *x = @([xxx intValue] + [one intValue]);
-        NSNumber *x1 = @([xxx intValue] - [one intValue]);
-        NSString *ipClient1, *ipClient2;
-        NSString *ipClient = [array[0]  stringByAppendingString:@"."];
-        ipClient = [ipClient stringByAppendingString:array[1]];
-        ipClient = [ipClient stringByAppendingString:@"."];
-        ipClient = [ipClient stringByAppendingString:array[2]];
-        ipClient = [ipClient stringByAppendingString:@"."];
-        ipClient1 = [ipClient stringByAppendingString:[x stringValue]];
-        ipClient2 = [ipClient stringByAppendingString:[x1 stringValue]];
-        
-        NSString *gw = [array[0]  stringByAppendingString:@"."];
-        gw = [gw stringByAppendingString:array[1]];
-        gw = [gw stringByAppendingString:@"."];
-        gw = [gw stringByAppendingString:array[2]];
-        gw = [gw stringByAppendingString:@"."];
-        gw = [gw stringByAppendingString:tempIP];
-        
-        
-        
+        NSString *ipClient = [lines[lines.count - 2] componentsSeparatedByString:@"-"][1];
         NSLog(@"ip client: %@", ipClient);
-        NSArray *result = [[NSArray alloc] initWithObjects:serverAddress, ipClient1, ipClient2, gw, nil];
+        NSArray *result = [[NSArray alloc] initWithObjects:serverAddress, ipClient, nil];
         return result;
     }
     return nil;

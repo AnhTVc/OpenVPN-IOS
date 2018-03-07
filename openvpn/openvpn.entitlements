@@ -8,10 +8,6 @@
 		<string>app-proxy-provider</string>
 		<string>content-filter-provider</string>
 	</array>
-	<key>com.apple.security.application-groups</key>
-	<array>
-		<string>group.ne.packet.tunnel.vpn.openvpn</string>
-	</array>
 	<key>keychain-access-groups</key>
 	<array>
 		<string>$(AppIdentifierPrefix)com.project.etoken.SimpleTunnel</string>

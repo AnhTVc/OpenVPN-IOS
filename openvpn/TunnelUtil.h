@@ -26,5 +26,6 @@
 - (NSString*) fileToNSString:(NSString *) folder namefilee:(NSString*) fileName;
 - (NSString*) readFileInDocument:(NSString*) fileName;
 - (void) deleteFileInDocument:(NSString*) fileName;
+
 - (NSArray *) getInfoInFileIP;
 @end
