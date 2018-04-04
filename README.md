@@ -7,9 +7,17 @@ It turns out that Apple doesn't allow you to use `<net/if_utun.h>` unless you pa
 
 Apple refuses to allow people to use the VPN framework unless they sign some sort of NDA: http://blog.michael.kuron-germany.de/2010/09/ios-4-1-undocumented-vpn-api-used-by-cisco-anyconnect/
 
+From IOS9, you can NetworkExtension to customer VPN
+
 ## Download full source
 
 https://drive.google.com/file/d/1E5EOwbE-dcdLFkcSBgZljTm17BwXmjHy/view?usp=sharing
+
+## Demo 
+I complete integrate openvpn with NetworkExtension: 
+
+Video demo in here: https://drive.google.com/file/d/1ZbCMwkFu4d8fhH7S82LjMUDteZmlLdZN/view?usp=sharing 
+
 
 ## Setup
 
@@ -42,7 +50,7 @@ To clean the `Submodules/openvpn` build folder:
 
 Simplest OpenVPN setup: [Static Key Mini-HOWTO](http://openvpn.net/index.php/open-source/documentation/miscellaneous/78-static-key-mini-howto.html)
 
-Connect me
+if you are interested, contact me
 skype: tranvietanh.hust@gmail.com
 email: tranvietanh.hust@gmail.com
 
