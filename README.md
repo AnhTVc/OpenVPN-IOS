@@ -56,5 +56,8 @@ But you don't  have to rebuild the library, I have add library into the project
 Simplest OpenVPN setup: [Static Key Mini-HOWTO](http://openvpn.net/index.php/open-source/documentation/miscellaneous/78-static-key-mini-howto.html)
 
 if you are interested or have problems when use, pls contact me
+
 skype: tranvietanh.hust@gmail.com
 email: tranvietanh.hust@gmail.com
+
+Do not hesitate, just a small fee I will help you complete the OpenVPN project on IOS
