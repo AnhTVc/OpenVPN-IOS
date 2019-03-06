@@ -13,7 +13,7 @@ OpenVPN-IOS is an Objective-C project that allows to easily configure and establ
 
 The project is designed to use in conjunction with NetworkExtension framework and doesn't use any private Apple API. 
 
-Support .mobileconfig 
+Support .mobileconfig sample openvpn connect app: https://openvpn.net/faq/can-i-import-an-openvpn-profile-via-an-ios-mobileconfig-file/
 
 ## Download full source
 
