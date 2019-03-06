@@ -13,6 +13,8 @@ OpenVPN-IOS is an Objective-C project that allows to easily configure and establ
 
 The project is designed to use in conjunction with NetworkExtension framework and doesn't use any private Apple API. 
 
+Support .mobileconfig 
+
 ## Download full source
 
 Download [here](https://drive.google.com/file/d/1E5EOwbE-dcdLFkcSBgZljTm17BwXmjHy/view?usp=sharing)
@@ -22,7 +24,7 @@ I complete integrate openvpn with NetworkExtension:
 
 Video demo in [here](https://drive.google.com/file/d/1ZbCMwkFu4d8fhH7S82LjMUDteZmlLdZN/view?usp=sharing) 
 
-
+Video demo work with [.mobileconfig](https://drive.google.com/file/d/1GJsVlJCRozZeYQT5uPMDVY-YI9F6br7h/view?usp=sharing)
 ## Setup
 
 Install GNU libtool and automake:
